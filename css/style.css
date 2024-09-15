@@ -429,29 +429,55 @@ a:focus {
 .about_section .detail-box a:hover {
   background-color: #f27a05;
 }
-/*hods section start */
-.hods{
-  .container{
-    display:flex;
+/* HODs section start */
+.hods {
+  .container {
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px; /* Decreased padding to reduce height */
   }
-  img{
-    width: 50%;
-    height:50%;
+
+  img {
+    width: 45%; /* Decreased size a bit to fit properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100%; /* Ensures the image is circular */
+    border: none; /* Removes any border around the image */
+    padding: 0; /* Ensure no padding around the image */
+    display: block; /* Ensures no extra spacing from inline elements */
   }
-  .description{
+
+  .description {
     font-size: large;
-    text-shadow: 1px 1px 2px rgb(217, 60, 29), 0 0 25px rgb(227, 193, 43), 0 0 5px orange;
     margin-left: 0px;
-    padding-left: 80px;
-    
+    padding-left: 60px; /* Decreased padding to reduce height */
   }
-  
-  
- 
+
+  /* Highlighting the main text */
+  .description h2 {
+    color: #e87501; /* Highlighting the name */
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+  }
+
+  .description h6 {
+    color: #e46912; /* Highlighting the HOD title */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Regular text styling for the paragraph */
+  .description p {
+    font-size: 1rem;
+    color: #000000; /* Keeps other text simple */
+    line-height: 1.6;
+  }
 }
-/*hod section end*/
+/* HODs section end */
+
+
 
 /*team section */
 .team_section {
